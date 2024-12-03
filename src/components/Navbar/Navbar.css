@@ -1,0 +1,18 @@
+.bg-body-tertiary {
+    background-color: #243847 !important;
+}
+
+.navbar-nav a {
+    color: white !important;
+}
+
+.logo {
+    height: 40px;
+    /* Define a altura do logotipo */
+    width: auto;
+    /* Mantém a proporção da imagem */
+    object-fit: contain;
+    /* Garante que a imagem não será cortada */
+    margin-right: 10px;
+    /* Espaço opcional ao lado do logotipo */
+}

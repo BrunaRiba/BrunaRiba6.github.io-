@@ -1,0 +1,30 @@
+.hogwarts-page-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #141421;
+    color: #141421;
+    background-image: url('src/assets/fundo.jpg') !important;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.letter-button {
+    padding: 0.75rem;
+    font-family: 'Harry P', serif;
+    color: white;
+    background-color: #8a4fba;
+    font-size: 1.5rem;
+}
+
+.letter-button:hover {
+    border: 2px solid #410275;
+}
+
+.letter-image {
+    width: 60vh;
+    height: auto;
+}

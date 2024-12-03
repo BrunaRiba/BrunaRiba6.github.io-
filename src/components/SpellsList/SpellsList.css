@@ -1,0 +1,58 @@
+#spells-list-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    background-image: url('src/assets/magic.jpg');
+}
+
+h2 {
+    text-align: left;
+    font-family: 'Harry P', serif;
+    margin-bottom: 20px;
+    color: #ff69b4;
+}
+
+#spells-list {
+    width: 80%;
+    cursor: pointer;
+}
+
+
+/* Efeito "mágico" ao passar o rato nas linhas da tabela */
+tr.magic-effect:hover {
+    color: #ff69b4;
+    /* Cor mágica */
+    transform: scale(1.05);
+    /* Aumenta o tamanho */
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+    transition: all 0.3s ease;
+}
+
+tr.magic-effect:hover td::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.3), 0 0 40px rgba(255, 105, 180, 0.2);
+    animation: magic-glow 1.5s infinite alternate;
+    z-index: -1;
+}
+
+/* Animação para o brilho */
+@keyframes magic-glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.3), 0 0 30px rgba(255, 105, 180, 0.2);
+    }
+
+    to {
+        box-shadow: 0 0 20px rgba(255, 105, 180, 0.7), 0 0 30px rgba(255, 105, 180, 0.5), 0 0 50px rgba(255, 105, 180, 0.3);
+    }
+}
