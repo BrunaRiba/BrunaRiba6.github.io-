@@ -6,13 +6,8 @@
     color: white !important;
 }
 
-.logo {
-    height: 40px;
-    /* Define a altura do logotipo */
-    width: auto;
-    /* Mantém a proporção da imagem */
-    object-fit: contain;
-    /* Garante que a imagem não será cortada */
-    margin-right: 10px;
-    /* Espaço opcional ao lado do logotipo */
+#navbar-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }

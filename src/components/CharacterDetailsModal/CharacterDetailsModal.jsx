@@ -3,12 +3,10 @@ import defaultAvatar from '../../assets/default_avatar.jpg'
 import './CharacterDetailsModal.css';
 
 function CharacterDetailsModal({ isModalOpen, setIsModalOpen, currentCharacter, setCurrentCharacter }) {
-    // Define o avatar da personagem: usa a imagem fornecida ou a imagem padrão
     const avatar = currentCharacter.image ? currentCharacter.image : defaultAvatar
 
 
     const closeModal = () => {
-        // Fecha o modal e limpa a personagem atual
         setIsModalOpen(false);
         setCurrentCharacter(null);
     }

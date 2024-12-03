@@ -1,10 +1,8 @@
 import defaultAvatar from '../../assets/default_avatar.jpg'
 
 export default function Character(props) {
-    // Desestrutura as props recebidas
     const { characterDetails, setIsModalOpen, setCurrentCharacter } = props;
     const { name, image } = characterDetails;
-    // Define o avatar: usa a imagem do personagem, ou a imagem padrão se não existir
     const avatar = image ? image : defaultAvatar
 
     const openModal = () => {

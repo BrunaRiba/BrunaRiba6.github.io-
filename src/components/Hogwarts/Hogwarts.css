@@ -3,7 +3,7 @@
     height: 100vh;
     background-color: #141421;
     color: #141421;
-    background-image: url('src/assets/fundo.jpg') !important;
+    background-image: url('/public/images/fundo.jpg') !important;
     background-size: cover;
     display: flex;
     flex-direction: column;

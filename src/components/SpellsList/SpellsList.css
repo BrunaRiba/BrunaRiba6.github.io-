@@ -6,8 +6,8 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-
-    background-image: url('src/assets/magic.jpg');
+    margin-top: 1rem;
+    background-image: url('/public/images/magic.jpg') !important;
 }
 
 h2 {
